@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Encerramento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="btnEncerrar">Encerrar semestre</button>
+        <p id="mensagem" class="oculto">Parabéns!</p>
+        <button id="btnVoltar" class="oculto voltar">Voltar</button>
+    </div>
+    <script>
+        document.getElementById('btnEncerrar').addEventListener('click', function() {
+            document.getElementById('btnVoltar').classList.remove('oculto');
+            document.getElementById('mensagem').classList.remove('oculto');
+            document.getElementById('btnEncerrar').classList.add('oculto');
+        });
+
+        document.getElementById('btnVoltar').addEventListener('click', function() {
+            document.getElementById('mensagem').classList.add('oculto');
+            document.getElementById('btnVoltar').classList.add('oculto');
+            document.getElementById('btnEncerrar').classList.remove('oculto');
+        });
+    </script>
+</body>
+</html>
+

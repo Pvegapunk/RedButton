@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+button:hover {
+    background-color: darkred;
+}
+
+.voltar {
+    background-color: blue; /* Cor diferente para o botão "Voltar" */
+    border-radius: 10px; /* Borda arredondada mas não circular */
+    width: 100px; /* Largura diferente */
+    height: 40px; /* Altura diferente */
+    font-size: 14px; /* Tamanho da fonte diferente */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.voltar:hover {
+    background-color: darkblue; /* Cor de fundo diferente ao passar o mouse */
+}
+
+.oculto {
+    display: none;
+}
+
+p {
+    font-size: 240px;
+    color: black;
+    margin-top: 20px;
+}
